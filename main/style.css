@@ -592,12 +592,24 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-\[-20\%\] {
+  margin-bottom: -20%;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mr-12 {
+  margin-right: 3rem;
 }
 
 .mr-2 {
@@ -632,8 +644,16 @@ video {
   display: none;
 }
 
+.h-\[550px\] {
+  height: 550px;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-1\/4 {
+  width: 25%;
 }
 
 @keyframes bounce {
@@ -652,8 +672,72 @@ video {
   animation: bounce 1s infinite;
 }
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 1s both;
+}
+
+@keyframes flip-down {
+  0% {
+    transform: rotateX(-90deg);
+    transform-origin: top;
+  }
+
+  100% {
+    transform: rotateX(0);
+    transform-origin: top;
+  }
+}
+
+.animate-flip-down {
+  animation: flip-down 1s both;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 1s both;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -688,6 +772,10 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.bg-\[url\(Image\/1647870784783\.jpg\)\] {
+  background-image: url(Image/1647870784783.jpg);
 }
 
 .bg-\[url\(Image\/DSC_0503\.JPG\)\] {
@@ -738,6 +826,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -769,6 +861,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -787,9 +884,29 @@ video {
   font-weight: 800;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
 .text-sky-400 {
@@ -817,9 +934,19 @@ video {
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
+.text-violet-700 {
+  --tw-text-opacity: 1;
+  color: rgb(109 40 217 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .opacity-100 {
@@ -830,6 +957,18 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.animate-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.animate-reverse {
+  animation-direction: reverse;
+}
+
+.animate-infinite {
+  animation-iteration-count: infinite;
 }
 
 .hover\:cursor-pointer:hover {
@@ -889,6 +1028,10 @@ video {
     margin-bottom: 2rem;
   }
 
+  .md\:mb-\[-10\%\] {
+    margin-bottom: -10%;
+  }
+
   .md\:ml-10 {
     margin-left: 2.5rem;
   }
@@ -901,6 +1044,10 @@ video {
     margin-left: 2rem;
   }
 
+  .md\:ml-96 {
+    margin-left: 24rem;
+  }
+
   .md\:mr-20 {
     margin-right: 5rem;
   }
@@ -911,6 +1058,10 @@ video {
 
   .md\:mr-4 {
     margin-right: 1rem;
+  }
+
+  .md\:mr-96 {
+    margin-right: 24rem;
   }
 
   .md\:mt-10 {
@@ -947,6 +1098,14 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[700px\] {
+    height: 700px;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .md\:w-\[130\%\] {
@@ -1003,6 +1162,11 @@ video {
 
   .md\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-9xl {
+    font-size: 8rem;
     line-height: 1;
   }
 
