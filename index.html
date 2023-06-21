@@ -99,10 +99,8 @@
             <p class="md:mt-2 mt-6 animate-bounce text-sky-500">
               FRONTEND DEVELOPER
             </p>
-            <p class="text-lg md:text-3xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-              aut numquam aliquam perferendis esse ab sed illum dolorum rem
-              consequuntur quas quae eum quasi ea.
+            <p class="text-xl md:text-4xl">
+             Every Success Story Started Form Nothing...
             </p>
           </div>
           <div class="md:mt-4 md:ml-8">
@@ -340,25 +338,27 @@
             >
               My Interests
             </h1>
-            <div class="flex justify-start">
-              <div class="m-3 md:m-5 md:text-2xl text-white">
-                <i class="fa-solid fa-headphones text-sky-400 m-2"></i
+            <div class="md:flex md:justify-start grid grid-cols-3 place-content-center">
+              
+              <div class="m-3 md:m-5 md:text-2xl text-white font-bold text-lg">
+                <i class="fa-solid fa-headphones text-blue-600 m-2"></i
                 ><br />Music
               </div>
-              <div class="m-3 md:m-5 md:text-2xl text-white">
-                <i class="fa-solid fa-person-biking text-sky-400 m-2"></i
+              <div class="m-3 md:m-5 md:text-2xl text-white font-bold text-lg">
+                <i class="fa-solid fa-person-biking text-blue-600 m-2"></i
                 ><br />Bike Riding
               </div>
-              <div class="m-3 md:m-5 md:text-2xl text-white">
-                <i class="fa-solid fa-guitar text-sky-400 m-2"></i><br />Playing
+              <div class="m-3 md:m-5 md:text-2xl text-white font-bold text-lg">
+                <i class="fa-solid fa-guitar text-blue-600 m-2"></i><br />Playing
                 Guitar
               </div>
-              <div class="m-3 md:m-5 md:text-2xl text-white">
-                <i class="fa-solid fa-camera-retro text-sky-400 m-2"></i
+              <div class="m-3 md:m-5 md:text-2xl text-white font-bold text-lg">
+                <i class="fa-solid fa-camera-retro text-blue-600 m-2"></i
                 ><br />Photography
               </div>
-              <div class="m-3 md:m-5 md:text-2xl text-white">
-                <i class="fa-solid fa-code text-sky-400 m-2"></i><br />Coding
+             
+              <div class="m-3 md:m-5 md:text-2xl text-white font-bold text-lg">
+                <i class="fa-solid fa-code text-blue-600 m-2"></i><br />Coding
               </div>
             </div>
           </div>
@@ -543,14 +543,15 @@
         >
           Get in Touch
         </h2>
-        <div class="flex justify-around">
+        <div class="md:flex md:justify-around">
           <!-- From Section -->
+         <form action="mailto:indrojit22996bhaduri@gmail.com" method="post" enctype="text/plain">
           <div class="m-8">
-            <input type="text" placeholder="Name" class="border-2 w-full mb-2 md:p-2 md:w-96" />
+            <input type="text" name="Name" placeholder="Name" class="border-2 w-full mb-2 md:p-2 md:w-96" />
             
-            <input type="text" placeholder="Email" class="border-2 w-full mb-2 md:p-2 md:w-96" />
+            <input type="text" name="Email" placeholder="Email" class="border-2 w-full mb-2 md:p-2 md:w-96" />
             <br>
-            <input type="text" placeholder="Subject" class="border-2 w-full mb-2 md:p-2 md:w-full" />
+            <input type="text" name="Subject" placeholder="Subject" class="border-2 w-full mb-2 md:p-2 md:w-full" />
             <br />
             <textarea
               name="Message"
@@ -561,12 +562,9 @@
               class="border-2 w-full mb-2 md:p-2 md:w-full"
             ></textarea>
             <br>
-            <a
-            href="#"
-            class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-cyan-500 hover:to-green-400 rounded-lg p-2 mr-2"
-            >Submit</a
-          >
+            <input type="submit" value="submit"class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-cyan-500 hover:to-green-400 rounded-lg p-2 mr-2" >
           </div>
+         </form>
 
           <!-- Icon -->
           <div class="m-8">
@@ -574,19 +572,21 @@
               <div><i class="fa-solid fa-phone text-sky-600 text-2xl md:text-4xl"></i></div>
               <div class="md:ml-8">
                 <p class="md:text-2xl font-bold">Call Me</p>
-                <p>+91 8617350163</p>
-              <p>+91 8170803550</p></div>
+                <p><a href="tel:+918617350163">+91 8617350163</a></p>
+              <p><a href="tel:+918170803550">+91 8170803550</a></p></div>
             </div>
             <div class="md:flex">
               <div><i class="fa-solid fa-envelope text-sky-600 text-2xl md:text-4xl"></i></div>
               <div class="md:ml-8">
                 <p class="md:text-2xl font-bold">E-mail</p>
-                <p>indrojit22996bhaduri@gmail.com</p>
-              <p>indrojit1996bhaduri@gmail.com</p></div>
+                <p><a href="mailto:indrojit22996bhaduri@gmail.com" target="_blank">indrojit22996bhaduri@gmail.com</a></p>
+             <p> <a href="mailto:indrojit1996bhaduri@gmail.com" target="_blank">indrojit1996bhaduri@gmail.com</a></p></div>
             </div>
             <div class="md:flex">
               <div><i class="fa-solid fa-location-dot text-sky-600 text-2xl md:text-4xl"></i></div>
               <div class="md:ml-8">
+                <p class="md:text-2xl font-bold">Location</p>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d227.60783222193947!2d88.2823111534091!3d24.111153409996763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1687341491362!5m2!1sen!2sin" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
                 <p class="md:text-2xl font-bold">Location</p>
               <p>Berhampore,Cossimbazar<br>Murshidabad,West Bengal<br>742102</p></div>
             </div>
